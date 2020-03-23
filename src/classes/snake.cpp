@@ -62,6 +62,7 @@ void snake::move(int direction)
 
 }
 
+// Fonction de colison avec les bords
 bool snake::checkColisionWithBoard()
 {
     Board *b;
@@ -71,3 +72,15 @@ bool snake::checkColisionWithBoard()
     return FALSE;
 }
 
+// Fonction des colisions serpent
+bool snake::checkColisionWithSnake()
+{
+	for (int i = 1; i < longeur; i++){
+	
+		if ( serpent[i] == serpent[0] ){
+			return true;
+		}	
+	}
+
+	return false;
+}

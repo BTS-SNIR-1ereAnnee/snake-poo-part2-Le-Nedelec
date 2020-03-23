@@ -26,6 +26,8 @@ int kbhit(void);
 
 int main()
 {
+
+	// variable qui sauvegarde la direction en cour du serpent, la direction du départ et vers le bas
     int directionEnCours=TOUCHE_KEY_DOWN;
 
     // pointeurs sur l'unique instance de la classe fenetre
@@ -39,6 +41,9 @@ int main()
     noecho();
 
     bool collision = FALSE;
+	/*
+	boucle qui permet à l'utilisateur de déplacer le serpent tant que le serpent ne touche pas les bords
+	*/
     while (!collision)
     {
         if(kbhit())
@@ -77,7 +82,7 @@ int kbhit(void)    /* Cette fonction retourne si une touche est appuyé par l'ut
     int ch, r;
     nodelay(stdscr, TRUE);
     ch = getch();
-    if( ch == ERR)
+    if(ch == ERR)
         r = FALSE;
     else
     {

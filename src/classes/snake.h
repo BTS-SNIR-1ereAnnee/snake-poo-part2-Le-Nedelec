@@ -38,6 +38,8 @@ public:
     */
     bool checkColisionWithBoard();
 
+	bool checkColisionWithSnake();
+
 
 private:
     /** tableau de point, corps du serpent*/

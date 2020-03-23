@@ -14,7 +14,7 @@ g++ main.cpp snake.cpp Point.cpp Board.cpp -l ncurses -o bin/test-sanke
 --------
 
 # Développement
-**Chaque question fera l'objet d'au mois un commit**
+**Chaque question fera l'objet d'au moins un commit**
 
 **Chaque methode devra être commentée dans le .h , sur le modèle des commentaires de la classe Point** 
 

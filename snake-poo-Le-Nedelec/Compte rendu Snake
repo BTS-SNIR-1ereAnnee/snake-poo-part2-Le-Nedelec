@@ -1,0 +1,32 @@
+Séance 1: Prise en main de la classe Point
+
+Appelle des fonctions de la classe point (up, down, left, right)
+!!! Rappel de la difference des .h et des .cpp !!!
+Utilisation des fonctions et correction de bug logique sur les fonctions up et down.
+(up aller en bas, down aller en haut)
+Déplacement d'un point unique par l'utilisation d'un switch case.
+Ajout de la classe Snake
+début de programmation de la fonction ajouter point dans la classe snake
+
+Séance 2: Programmation de ajouter point et de l'affiche du serpent
+
+La fonction ajouter point a été développer en utilisant un index permettant de connaitre la taille du serpent, a été pensée pour éviter un refactoring de la fonction quant on aura créer la classe fruit
+Affichage du serpent (affiche les points).
+La classe snake utilise des points sous forme de tableau, ce tableau est alors le serpent.
+
+Séance 3: Programmation du déplacement du serpent
+
+Plusieur itération de déplacement snake avant résultat concluant 
+!!! Création de la fonction débug pour mieux analyser le résultat mémoire des modification faite sur les points dans le tableau serpent !!!
+Fonction du déplacement du serpent fonctionnel bien que sont mode de fonctionnement n'est pas complétement compris 
+
+Note: 
+- la fonction debugSnake a été une source d'erreur car oublie d'utiliser la fonction debug créer dans la classe point (réglé milieu de la 3éme séance)
+
+- Les conventions de codage indique que les utilisations des getter et les setter sont préférable à l'utilisation des this->m_nomVariable 
+
+- Erreur récurente de considérer les variables de type snake comme des tableaux (l'erreur viens du faite qu'un type snake est un tableau de points)
+
+- Peu d'erreurs de compilation en soi, la majoriter des erreurs été des erreurs logique. Le peu d'erreur de compilation était liée au namespace std, avec leurs utilisation ou le manque de leur utilisation.
+
+
