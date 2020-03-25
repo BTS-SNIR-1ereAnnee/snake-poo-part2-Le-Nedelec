@@ -73,14 +73,17 @@ bool snake::checkColisionWithBoard()
 }
 
 // Fonction des colisions serpent
-bool snake::checkColisionWithSnake()
-{
+bool snake::checkColisionWithSnake(){
+
 	for (int i = 1; i < longeur; i++){
 	
-		if ( serpent[i] == serpent[0] ){
-			return true;
-		}	
+		if ( serpent[0].getX() == serpent[i].getX() && serpent[0].getY() == serpent[i].getY()){
+		return TRUE;
+
+		}
+
 	}
 
-	return false;
+return FALSE;
+
 }
