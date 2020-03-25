@@ -14,6 +14,8 @@ public:
     Point();
     /** Constructeur */
     Point(int x, int y);
+	Point(int x, int y, char carac);
+	Point(char carac);
 
     /** Default destructor */
     virtual ~Point();
@@ -65,11 +67,23 @@ public:
     *   Affiche les coordonnées
     */
     void debug();
+
+	char getChar();
+
+	void setChar(char carac);
+
 protected:
 
 private:
     int m_x; //!< Member variable "m_x"
     int m_y; //!< Member variable "m_y"
+	char m_char;
 };
+
+using namespace std;
+
+
+bool operator==(Point const& a, Point const& b);
+
 
 #endif // POINT_H

@@ -67,7 +67,7 @@ int main()
 
         }
         serpent.move(directionEnCours);
-        collision = serpent.checkColisionWithBoard();
+        collision = serpent.checkColisionWithBoard() || serpent.checkColisionWithSnake();
         serpent.affichSerpent();
         usleep (150000);
 

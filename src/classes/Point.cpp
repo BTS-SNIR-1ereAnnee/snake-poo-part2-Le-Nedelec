@@ -17,6 +17,18 @@ Point::Point(int x, int y)
 	cout<<"quelque chose"<< endl;
 }
 
+Point::Point(int x, int y, char carac)
+{
+	this->m_x = x;
+    this->m_y = y;
+	m_char = carac;
+}
+
+Point::Point(char carac)
+{
+	m_char = carac;
+}
+
 void Point::setPoint(int x, int y)
 {
     this->m_x = x;
@@ -83,8 +95,23 @@ void Point::debug()
     cout << "(" << this->m_x << "," << this->m_y << ")";
 }
 
+	void Point::setChar(char carac){
+		m_char = carac;
+}
+
+	char Point::getChar(){
+		return m_char;
+}
+
 Point::~Point()
 {
     //dtor
 }
 
+bool operator==(Point const& a, Point const& b)
+{
+	if (a.getX() == b.getX() && a.getY() == b.getY())
+		return TRUE;
+	else
+		return FALSE;
+}
