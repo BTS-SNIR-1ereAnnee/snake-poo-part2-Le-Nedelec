@@ -35,7 +35,7 @@ int main()
     // initialisation des pointeurs
     fenetre = Board::getInstance ();
 
-    snake serpent(10,4);
+    snake serpent(10,10);
 
     keypad (stdscr,true);
     noecho();
@@ -67,7 +67,6 @@ int main()
 
         }
         serpent.move(directionEnCours);
-        collision = serpent.checkColisionWithBoard() || serpent.checkColisionWithSnake();
         serpent.affichSerpent();
         usleep (150000);
 
