@@ -8,20 +8,20 @@ using namespace std;
 Point::Point()
 {
     m_x = m_y = 10;
-	cout<<"quelque chose"<< endl;
+	this->m_char = '*';
 }
 Point::Point(int x, int y)
 {
     this->m_x = x;
     this->m_y = y;
-	cout<<"quelque chose"<< endl;
+	this->m_char = '*';
 }
 
 Point::Point(int x, int y, char carac)
 {
 	this->m_x = x;
     this->m_y = y;
-	m_char = carac;
+	this->m_char = carac;
 }
 
 Point::Point(char carac)
