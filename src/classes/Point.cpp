@@ -8,13 +8,13 @@ using namespace std;
 Point::Point()
 {
     m_x = m_y = 10;
-	this->m_char = '*';
+	this->m_char = '@';
 }
 Point::Point(int x, int y)
 {
     this->m_x = x;
     this->m_y = y;
-	this->m_char = '*';
+	this->m_char = '@';
 }
 
 Point::Point(int x, int y, char carac)
